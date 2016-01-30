@@ -19,3 +19,19 @@ Basic Java Maven Project Struture
    * git commit -m "why your moving the files up present something"
    * git status ;what is pending on stage to be pushed and what has change
    * git push -u origin master ;pushes to github repository (URL)
+   
+ ## How to clone a project
+ 
+#### README Contents
+* Initializing a project
+ * Create a repository at GitHub and make sure to select readme.md and .gitignore so that they are created
+  * Copy the Url for this repository
+ * Create a repository at your local drive
+ * Clone the repository from GitHub at your local Drive by navigating to the directory at your drive and running bash (Shift+righ clik) or run cmd.exe.  Make sure github software is installed. 
+  * git clone URL from hit hub.
+ * Update the readme file and .gitignore
+  * git add . 
+   * will add all files
+  * git commit -m "will push all files into staging and comment added"
+  * git push 
+   * will push all files that are in stating (have been commited) to GitHub repository.
