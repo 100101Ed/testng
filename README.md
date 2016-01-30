@@ -7,6 +7,7 @@ Basic Java Maven Project Struture
 * [SQA] (hhttp://www.sqa.org/)
 * [Overview for github] (http://rogerdudler.github.io/git-guide/)
 * [MarkDown syntax] (https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html)
+* [Auto Generate .gitignore] (https://www.gitignore.io/)
 
 ## How to create an up strim
 * Create project at github without initialize the project
