@@ -20,7 +20,7 @@ import java.util.Arrays;
  * @version 1.0.0
  * @since 1.0
  */
-public class UpdateArray {
+public class UpdateArrays {
 
 	/**
 	 * Will add one element to an existing array

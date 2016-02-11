@@ -15,7 +15,7 @@ import org.junit.Ignore;
 import org.junit.Test;
 
 import com.sqa.em.util.helper.RequestInput;
-import com.sqa.em.util.helper.UpdateArray;
+import com.sqa.em.util.helper.UpdateArrays;
 
 /**
  * RequestInputTest //ADDD (description of class)
@@ -39,14 +39,14 @@ public class RequestInputTest {
 	@Ignore
 	public void testAddStringElement() {
 		String[] myElements = new String[] { "baseball", "soccer ball", "football", "tennis ball" };
-		String[] myNewElements = UpdateArray.addStringElement(myElements, "racket ball");
+		String[] myNewElements = UpdateArrays.addStringElement(myElements, "racket ball");
 		System.out.println("Old elements:" + Arrays.toString(myElements));
 		System.out.println("New elements:" + Arrays.toString(myNewElements));
-		myNewElements = UpdateArray.addStringElement(myNewElements, "racket2 ball2");
+		myNewElements = UpdateArrays.addStringElement(myNewElements, "racket2 ball2");
 		System.out.println("New elements:" + Arrays.toString(myNewElements));
-		myNewElements = UpdateArray.addStringElement(myNewElements, "racket21 ball21");
+		myNewElements = UpdateArrays.addStringElement(myNewElements, "racket21 ball21");
 		System.out.println("New elements:" + Arrays.toString(myNewElements));
-		myNewElements = UpdateArray.addStringElement(myNewElements, "racket21 ball21");
+		myNewElements = UpdateArrays.addStringElement(myNewElements, "racket21 ball21");
 		System.out.println("New elements:" + Arrays.toString(myNewElements));
 	}
 
