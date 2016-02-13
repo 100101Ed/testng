@@ -35,14 +35,12 @@ public class IdentifyObject {
 	// Use this method to get info about the class being passed
 	// Uses Reflection API
 	public static void displayInfo(Object obj) {
-		System.out.println("Object Type: " + obj.getClass().getSimpleName());
-		System.out.print("\tFields are: " + Arrays.toString(getFieldNames(obj)) + "\n");
-		System.out.print("\tMethods are: " + Arrays.toString(getMethodNames(obj)) + "\n");
+		System.out.println(getInfo(obj));
 	}
-
-	// Uses Reflection API
-	public static void displayInfo(Object obj1, Object obj2, Object... objN) {
-	}
+	// // Uses Reflection API
+	// public static void displayInfo(Object obj1, Object obj2, Object... objN)
+	// {
+	// }
 
 	//////// 2DMatrix
 	public static void displayInfo(Object[] obj) {
@@ -79,7 +77,16 @@ public class IdentifyObject {
 
 	// Uses Reflection API
 	public static String getInfo(Object obj) {
-		return null;
+		StringBuilder sb = new StringBuilder();
+		sb.append("Object Type: ");
+		sb.append(obj.getClass().getSimpleName());
+		sb.append("\tFields are: ");
+		sb.append(Arrays.toString(getFieldNames(obj)));
+		sb.append("\n");
+		sb.append("\tMethods are: ");
+		sb.append(Arrays.toString(getMethodNames(obj)));
+		sb.append("\n");
+		return sb.toString();
 	}
 
 	// Uses Reflection API
